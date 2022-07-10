@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body{
+  background-image: url('https://images.unsplash.com/photo-1599008633840-052c7f756385?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bm90ZWJvb2t8ZW58MHx8MHx8&w=1000&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>My To Do List</h1>
+    </div>
+    <form id="form_task">
+        <div class="todoinput">
+            <i><input type="text" class="form_title" placeholder="Title...">
+            <input type="text" class="form_description" placeholder="description">
+            <input type="date" class="form_deadline" placeholder="deadline">
+
+        </div>
+        <div class="button">
+                <button class="form_button" type="submit"><font size=4 color= "black" style= "Eras Bold ITC"> ADD</font></button>
+        </div>
+        <br>
+    </form>
+    <center>
+        <br><br><br>
+        <div class="nooftasks"></div>
+        <section class="todo_task_list"></section>
+            <section class="delete_completed" >
+                <button class="btn_delete_completed " onclick="delete_completed()">Delete Completed tasks</button>
+        </section>
+    </center>
+    
+    <script type="text/javascript" src="java.js"></script>
+</body>
+
+</html>
